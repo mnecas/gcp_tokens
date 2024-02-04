@@ -1,0 +1,186 @@
+{
+  "textPayload": "{'attributes': {'specversion': '1.0', 'id': '9090423213776352', 'source': '//pubsub.googleapis.com/projects/honeytokens-401815/topics/test', 'type': 'google.cloud.pubsub.topic.v1.messagePublished', 'datacontenttype': 'application/json', 'time': '2023-12-05T11:31:31.370Z'}, 'data': {'message': {'attributes': {'logging.googleapis.com/timestamp': '2023-12-05T11:31:28.346224146Z'}, 'data': 'eyJpbnNlcnRJZCI6IjE1MnhtZG5lMWpqMW8iLCJsb2dOYW1lIjoicHJvamVjdHMvaG9uZXl0b2tlbnMtNDAxODE1L2xvZ3MvY2xvdWRhdWRpdC5nb29nbGVhcGlzLmNvbSUyRmRhdGFfYWNjZXNzIiwicHJvdG9QYXlsb2FkIjp7IkB0eXBlIjoidHlwZS5nb29nbGVhcGlzLmNvbS9nb29nbGUuY2xvdWQuYXVkaXQuQXVkaXRMb2ciLCJhdXRoZW50aWNhdGlvbkluZm8iOnsicHJpbmNpcGFsRW1haWwiOiJ0ZXN0LTU3NEBob25leXRva2Vucy00MDE4MTUuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzZXJ2aWNlQWNjb3VudEtleU5hbWUiOiIvL2lhbS5nb29nbGVhcGlzLmNvbS9wcm9qZWN0cy9ob25leXRva2Vucy00MDE4MTUvc2VydmljZUFjY291bnRzL3Rlc3QtNTc0QGhvbmV5dG9rZW5zLTQwMTgxNS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbS9rZXlzL2I5ZjkwNTQ5M2ZjOGZmMTVkMjFiMzgyOWY4ODM5MGE5MGJlMGRhMzMifSwiYXV0aG9yaXphdGlvbkluZm8iOlt7InBlcm1pc3Npb24iOiJzdG9yYWdlLmJ1Y2tldHMubGlzdCIsInJlc291cmNlQXR0cmlidXRlcyI6e319XSwibWV0aG9kTmFtZSI6InN0b3JhZ2UuYnVja2V0cy5saXN0IiwicmVxdWVzdE1ldGFkYXRhIjp7ImNhbGxlcklwIjoiMjEzLjE3NS4zNy4xMCIsImNhbGxlclN1cHBsaWVkVXNlckFnZW50IjoiZ29vZ2xlLWNsb3VkLXNkayBnY2xvdWQvNDUwLjAuMCBjb21tYW5kL2djbG91ZC5zdG9yYWdlLmxzIGludm9jYXRpb24taWQvYTE0OWYwNTcyYjcwNDFkY2EzMTNkOWE4OTEzOTk5M2IgZW52aXJvbm1lbnQvTm9uZSBlbnZpcm9ubWVudC12ZXJzaW9uL05vbmUgY2xpZW50LW9zL0xJTlVYIGNsaWVudC1vcy12ZXIvNi42LjIgY2xpZW50LXBsdGYtYXJjaC94ODZfNjQgaW50ZXJhY3RpdmUvVHJ1ZSBmcm9tLXNjcmlwdC9GYWxzZSBweXRob24vMy45LjE2IHRlcm0veHRlcm0tMjU2Y29sb3IgKExpbnV4IDYuNi4yLTIwMS5mYzM5Lng4Nl82NCksZ3ppcChnZmUpIiwiZGVzdGluYXRpb25BdHRyaWJ1dGVzIjp7fSwicmVxdWVzdEF0dHJpYnV0ZXMiOnsiYXV0aCI6e30sInRpbWUiOiIyMDIzLTEyLTA1VDExOjMxOjI4LjQxMzY1OTUxNVoifX0sInJlc291cmNlTG9jYXRpb24iOnsiY3VycmVudExvY2F0aW9ucyI6WyJnbG9iYWwiXX0sInNlcnZpY2VOYW1lIjoic3RvcmFnZS5nb29nbGVhcGlzLmNvbSIsInN0YXR1cyI6eyJjb2RlIjo3fX0sInJlY2VpdmVUaW1lc3RhbXAiOiIyMDIzLTEyLTA1VDExOjMxOjI4LjkyNzY0NDk1MloiLCJyZXNvdXJjZSI6eyJsYWJlbHMiOnsiYnVja2V0X25hbWUiOiIiLCJsb2NhdGlvbiI6Imdsb2JhbCIsInByb2plY3RfaWQiOiJob25leXRva2Vucy00MDE4MTUifSwidHlwZSI6Imdjc19idWNrZXQifSwic2V2ZXJpdHkiOiJFUlJPUiIsInRpbWVzdGFtcCI6IjIwMjMtMTItMDVUMTE6MzE6MjguMzQ2MjI0MTQ2WiJ9', 'messageId': '9090423213776352', 'message_id': '9090423213776352', 'publishTime': '2023-12-05T11:31:31.37Z', 'publish_time': '2023-12-05T11:31:31.37Z'}, 'subscription': 'projects/honeytokens-401815/subscriptions/eventarc-us-central1-function-1-925702-sub-345'}}",
+  "insertId": "656f0a140003d7b22b9ecebe",
+  "resource": {
+    "type": "cloud_run_revision",
+    "labels": {
+      "project_id": "honeytokens-401815",
+      "service_name": "function-1",
+      "configuration_name": "function-1",
+      "revision_name": "function-1-00002-kam",
+      "location": "us-central1"
+    }
+  },
+  "timestamp": "2023-12-05T11:31:32.251826Z",
+  "labels": {
+    "instanceId": "0087599d42b069f945f358b8aa078af0628e12a8020db6d661aca3dda7fa8e836294581f594d0d02d16e6d7f4fba3b6613b6eda05bc7ba408a431a8f7c885794",
+    "goog-managed-by": "cloudfunctions"
+  },
+  "logName": "projects/honeytokens-401815/logs/run.googleapis.com%2Fstdout",
+  "receiveTimestamp": "2023-12-05T11:31:32.255023166Z"
+}
+
+{
+  "textPayload": "b'{\"insertId\":\"152xmdne1jj1o\",\"logName\":\"projects/honeytokens-401815/logs/cloudaudit.googleapis.com%2Fdata_access\",\"protoPayload\":{\"@type\":\"type.googleapis.com/google.cloud.audit.AuditLog\",\"authenticationInfo\":{\"principalEmail\":\"test-574@honeytokens-401815.iam.gserviceaccount.com\",\"serviceAccountKeyName\":\"//iam.googleapis.com/projects/honeytokens-401815/serviceAccounts/test-574@honeytokens-401815.iam.gserviceaccount.com/keys/b9f905493fc8ff15d21b3829f88390a90be0da33\"},\"authorizationInfo\":[{\"permission\":\"storage.buckets.list\",\"resourceAttributes\":{}}],\"methodName\":\"storage.buckets.list\",\"requestMetadata\":{\"callerIp\":\"213.175.37.10\",\"callerSuppliedUserAgent\":\"google-cloud-sdk gcloud/450.0.0 command/gcloud.storage.ls invocation-id/a149f0572b7041dca313d9a89139993b environment/None environment-version/None client-os/LINUX client-os-ver/6.6.2 client-pltf-arch/x86_64 interactive/True from-script/False python/3.9.16 term/xterm-256color (Linux 6.6.2-201.fc39.x86_64),gzip(gfe)\",\"destinationAttributes\":{},\"requestAttributes\":{\"auth\":{},\"time\":\"2023-12-05T11:31:28.413659515Z\"}},\"resourceLocation\":{\"currentLocations\":[\"global\"]},\"serviceName\":\"storage.googleapis.com\",\"status\":{\"code\":7}},\"receiveTimestamp\":\"2023-12-05T11:31:28.927644952Z\",\"resource\":{\"labels\":{\"bucket_name\":\"\",\"location\":\"global\",\"project_id\":\"honeytokens-401815\"},\"type\":\"gcs_bucket\"},\"severity\":\"ERROR\",\"timestamp\":\"2023-12-05T11:31:28.346224146Z\"}'",
+  "insertId": "656f0a140003d7c75b5696d8",
+  "resource": {
+    "type": "cloud_run_revision",
+    "labels": {
+      "location": "us-central1",
+      "project_id": "honeytokens-401815",
+      "service_name": "function-1",
+      "configuration_name": "function-1",
+      "revision_name": "function-1-00002-kam"
+    }
+  },
+  "timestamp": "2023-12-05T11:31:32.251847Z",
+  "labels": {
+    "goog-managed-by": "cloudfunctions",
+    "instanceId": "0087599d42b069f945f358b8aa078af0628e12a8020db6d661aca3dda7fa8e836294581f594d0d02d16e6d7f4fba3b6613b6eda05bc7ba408a431a8f7c885794"
+  },
+  "logName": "projects/honeytokens-401815/logs/run.googleapis.com%2Fstdout",
+  "receiveTimestamp": "2023-12-05T11:31:32.601740620Z"
+}
+
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {
+      "code": 7
+    },
+    "authenticationInfo": {
+      "principalEmail": "test-574@honeytokens-401815.iam.gserviceaccount.com",
+      "serviceAccountKeyName": "//iam.googleapis.com/projects/honeytokens-401815/serviceAccounts/test-574@honeytokens-401815.iam.gserviceaccount.com/keys/b9f905493fc8ff15d21b3829f88390a90be0da33"
+    },
+    "requestMetadata": {
+      "callerIp": "213.175.37.10",
+      "callerSuppliedUserAgent": "google-cloud-sdk gcloud/450.0.0 command/gcloud.storage.ls invocation-id/a149f0572b7041dca313d9a89139993b environment/None environment-version/None client-os/LINUX client-os-ver/6.6.2 client-pltf-arch/x86_64 interactive/True from-script/False python/3.9.16 term/xterm-256color (Linux 6.6.2-201.fc39.x86_64),gzip(gfe)",
+      "requestAttributes": {
+        "time": "2023-12-05T11:31:28.413659515Z",
+        "auth": {}
+      },
+      "destinationAttributes": {}
+    },
+    "serviceName": "storage.googleapis.com",
+    "methodName": "storage.buckets.list",
+    "authorizationInfo": [
+      {
+        "permission": "storage.buckets.list",
+        "resourceAttributes": {}
+      }
+    ],
+    "resourceLocation": {
+      "currentLocations": [
+        "global"
+      ]
+    }
+  },
+  "insertId": "152xmdne1jj1o",
+  "resource": {
+    "type": "gcs_bucket",
+    "labels": {
+      "location": "global",
+      "project_id": "honeytokens-401815",
+      "bucket_name": ""
+    }
+  },
+  "timestamp": "2023-12-05T11:31:28.346224146Z",
+  "severity": "ERROR",
+  "logName": "projects/honeytokens-401815/logs/cloudaudit.googleapis.com%2Fdata_access",
+  "receiveTimestamp": "2023-12-05T11:31:28.927644952Z"
+}
+
+// original
+{
+  "attributes": {
+    "specversion": "1.0",
+    "id": "10303190409793846",
+    "source": "//pubsub.googleapis.com/projects/honeytokens-401815/topics/honeytokens-pubsub",
+    "type": "google.cloud.pubsub.topic.v1.messagePublished",
+    "datacontenttype": "application/json",
+    "time": "2024-01-25T20:46:01.671Z"
+  },
+  "data": {
+    "message": {
+      "attributes": {
+        "logging.googleapis.com/timestamp": "2024-01-25T20:45:59.046134682Z"
+      },
+      "data": "eyJpbnNlcnRJZCI6IjEydW50NHpkcm50eSIsImxvZ05hbWUiOiJwcm9qZWN0cy9ob25leXRva2Vucy00MDE4MTUvbG9ncy9jbG91ZGF1ZGl0Lmdvb2dsZWFwaXMuY29tJTJGZGF0YV9hY2Nlc3MiLCJwcm90b1BheWxvYWQiOnsiQHR5cGUiOiJ0eXBlLmdvb2dsZWFwaXMuY29tL2dvb2dsZS5jbG91ZC5hdWRpdC5BdWRpdExvZyIsImF1dGhlbnRpY2F0aW9uSW5mbyI6eyJwcmluY2lwYWxFbWFpbCI6InRlc3QtYWRtaW4tdXNlcjNAaG9uZXl0b2tlbnMtNDAxODE1LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic2VydmljZUFjY291bnRLZXlOYW1lIjoiLy9pYW0uZ29vZ2xlYXBpcy5jb20vcHJvamVjdHMvaG9uZXl0b2tlbnMtNDAxODE1L3NlcnZpY2VBY2NvdW50cy90ZXN0LWFkbWluLXVzZXIzQGhvbmV5dG9rZW5zLTQwMTgxNS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbS9rZXlzLzE0NmE4ODJhYWNmNjVmMWQwMWM0NWIyOGNiM2JjZDEyMjEzYWNiOTYifSwiYXV0aG9yaXphdGlvbkluZm8iOlt7InBlcm1pc3Npb24iOiJzdG9yYWdlLmJ1Y2tldHMubGlzdCIsInJlc291cmNlQXR0cmlidXRlcyI6e319XSwibWV0aG9kTmFtZSI6InN0b3JhZ2UuYnVja2V0cy5saXN0IiwicmVxdWVzdE1ldGFkYXRhIjp7ImNhbGxlcklwIjoiMmEwMDoxMDI4OjgzYTA6NTM4ZTo3OTQ1OmI1MmM6YjQwYToyYmRmIiwiY2FsbGVyU3VwcGxpZWRVc2VyQWdlbnQiOiJnb29nbGUtY2xvdWQtc2RrIGdjbG91ZC80NTAuMC4wIGNvbW1hbmQvZ2Nsb3VkLnN0b3JhZ2UubHMgaW52b2NhdGlvbi1pZC9hZDhjNTYwNzFjNDQ0MTA0OGNmMWRmZjgyMzNiYTJlOCBlbnZpcm9ubWVudC9Ob25lIGVudmlyb25tZW50LXZlcnNpb24vTm9uZSBjbGllbnQtb3MvTElOVVggY2xpZW50LW9zLXZlci82LjYuMTIgY2xpZW50LXBsdGYtYXJjaC94ODZfNjQgaW50ZXJhY3RpdmUvVHJ1ZSBmcm9tLXNjcmlwdC9GYWxzZSBweXRob24vMy45LjE2IHRlcm0veHRlcm0tMjU2Y29sb3IgKExpbnV4IDYuNi4xMi0yMDAuZmMzOS54ODZfNjQpLGd6aXAoZ2ZlKSIsImRlc3RpbmF0aW9uQXR0cmlidXRlcyI6e30sInJlcXVlc3RBdHRyaWJ1dGVzIjp7ImF1dGgiOnt9LCJ0aW1lIjoiMjAyNC0wMS0yNVQyMDo0NTo1OS4xNDM4NDA0NjhaIn19LCJyZXNvdXJjZUxvY2F0aW9uIjp7ImN1cnJlbnRMb2NhdGlvbnMiOlsiZ2xvYmFsIl19LCJzZXJ2aWNlTmFtZSI6InN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20iLCJzdGF0dXMiOnsiY29kZSI6N319LCJyZWNlaXZlVGltZXN0YW1wIjoiMjAyNC0wMS0yNVQyMDo0NjowMC43OTY0MzM1NjdaIiwicmVzb3VyY2UiOnsibGFiZWxzIjp7ImJ1Y2tldF9uYW1lIjoiIiwibG9jYXRpb24iOiJnbG9iYWwiLCJwcm9qZWN0X2lkIjoiaG9uZXl0b2tlbnMtNDAxODE1In0sInR5cGUiOiJnY3NfYnVja2V0In0sInNldmVyaXR5IjoiRVJST1IiLCJ0aW1lc3RhbXAiOiIyMDI0LTAxLTI1VDIwOjQ1OjU5LjA0NjEzNDY4MloifQ==",
+      "messageId": "10303190409793846",
+      "message_id": "10303190409793846",
+      "publishTime": "2024-01-25T20:46:01.671Z",
+      "publish_time": "2024-01-25T20:46:01.671Z"
+    },
+    "subscription": "projects/honeytokens-401815/subscriptions/eventarc-us-central1-honeytoken-function-333789-sub-508"
+  }
+}
+
+
+// Data
+{
+  "insertId": "12unt4zdrnty",
+  "logName": "projects/honeytokens-401815/logs/cloudaudit.googleapis.com%2Fdata_access",
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "test-admin-user3@honeytokens-401815.iam.gserviceaccount.com",
+      "serviceAccountKeyName": "//iam.googleapis.com/projects/honeytokens-401815/serviceAccounts/test-admin-user3@honeytokens-401815.iam.gserviceaccount.com/keys/146a882aacf65f1d01c45b28cb3bcd12213acb96"
+    },
+    "authorizationInfo": [
+      {
+        "permission": "storage.buckets.list",
+        "resourceAttributes": {}
+      }
+    ],
+    "methodName": "storage.buckets.list",
+    "requestMetadata": {
+      "callerIp": "2a00:1028:83a0:538e:7945:b52c:b40a:2bdf",
+      "callerSuppliedUserAgent": "google-cloud-sdk gcloud/450.0.0 command/gcloud.storage.ls invocation-id/ad8c56071c4441048cf1dff8233ba2e8 environment/None environment-version/None client-os/LINUX client-os-ver/6.6.12 client-pltf-arch/x86_64 interactive/True from-script/False python/3.9.16 term/xterm-256color (Linux 6.6.12-200.fc39.x86_64),gzip(gfe)",
+      "destinationAttributes": {},
+      "requestAttributes": {
+        "auth": {},
+        "time": "2024-01-25T20:45:59.143840468Z"
+      }
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "global"
+      ]
+    },
+    "serviceName": "storage.googleapis.com",
+    "status": {
+      "code": 7
+    }
+  },
+  "receiveTimestamp": "2024-01-25T20:46:00.796433567Z",
+  "resource": {
+    "labels": {
+      "bucket_name": "",
+      "location": "global",
+      "project_id": "honeytokens-401815"
+    },
+    "type": "gcs_bucket"
+  },
+  "severity": "ERROR",
+  "timestamp": "2024-01-25T20:45:59.046134682Z"
+}%
+
+
+
+
+
+
+
+
+
+
+
+{
+  insertId: "65b42ddb0008f84d4c264d50"
+  labels: {2}
+  logName: "projects/honeytokens-401815/logs/run.googleapis.com%2Fstdout"
+  receiveTimestamp: "2024-01-26T22:10:35.633989100Z"
+  resource: {2}
+  textPayload: "{'attributes': {'specversion': '1.0', 'id': '10331227395807718', 'source': '//pubsub.googleapis.com/projects/honeytokens-401815/topics/honeytokens-pubsub', 'type': 'google.cloud.pubsub.topic.v1.messagePublished', 'datacontenttype': 'application/json', 'time': '2024-01-26T22:10:34.387Z'}, 'data': {'message': {'attributes': {'logging.googleapis.com/timestamp': '2024-01-26T22:10:30.951688936Z'}, 'data': 'eyJpbnNlcnRJZCI6ImZ0dGNsb2UyMjM0OSIsImxvZ05hbWUiOiJwcm9qZWN0cy9ob25leXRva2Vucy00MDE4MTUvbG9ncy9jbG91ZGF1ZGl0Lmdvb2dsZWFwaXMuY29tJTJGZGF0YV9hY2Nlc3MiLCJwcm90b1BheWxvYWQiOnsiQHR5cGUiOiJ0eXBlLmdvb2dsZWFwaXMuY29tL2dvb2dsZS5jbG91ZC5hdWRpdC5BdWRpdExvZyIsImF1dGhlbnRpY2F0aW9uSW5mbyI6eyJwcmluY2lwYWxFbWFpbCI6InRlc3QtYWRtaW4tdXNlcjNAaG9uZXl0b2tlbnMtNDAxODE1LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic2VydmljZUFjY291bnRLZXlOYW1lIjoiLy9pYW0uZ29vZ2xlYXBpcy5jb20vcHJvamVjdHMvaG9uZXl0b2tlbnMtNDAxODE1L3NlcnZpY2VBY2NvdW50cy90ZXN0LWFkbWluLXVzZXIzQGhvbmV5dG9rZW5zLTQwMTgxNS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbS9rZXlzLzE0NmE4ODJhYWNmNjVmMWQwMWM0NWIyOGNiM2JjZDEyMjEzYWNiOTYifSwiYXV0aG9yaXphdGlvbkluZm8iOlt7InBlcm1pc3Npb24iOiJzdG9yYWdlLmJ1Y2tldHMubGlzdCIsInJlc291cmNlQXR0cmlidXRlcyI6e319XSwibWV0aG9kTmFtZSI6InN0b3JhZ2UuYnVja2V0cy5saXN0IiwicmVxdWVzdE1ldGFkYXRhIjp7ImNhbGxlcklwIjoiMmEwMDoxMDI4OjgzYTA6NTM4ZTo3OTQ1OmI1MmM6YjQwYToyYmRmIiwiY2FsbGVyU3VwcGxpZWRVc2VyQWdlbnQiOiJnb29nbGUtY2xvdWQtc2RrIGdjbG91ZC80NTAuMC4wIGNvbW1hbmQvZ2Nsb3VkLnN0b3JhZ2UubHMgaW52b2NhdGlvbi1pZC9lZjI2NjJmNjU3ZWI0NDlkYjljMjdjMTVlYWZkYTk1ZCBlbnZpcm9ubWVudC9Ob25lIGVudmlyb25tZW50LXZlcnNpb24vTm9uZSBjbGllbnQtb3MvTElOVVggY2xpZW50LW9zLXZlci82LjYuMTMgY2xpZW50LXBsdGYtYXJjaC94ODZfNjQgaW50ZXJhY3RpdmUvVHJ1ZSBmcm9tLXNjcmlwdC9GYWxzZSBweXRob24vMy45LjE2IHRlcm0veHRlcm0tMjU2Y29sb3IgKExpbnV4IDYuNi4xMy0yMDAuZmMzOS54ODZfNjQpLGd6aXAoZ2ZlKSIsImRlc3RpbmF0aW9uQXR0cmlidXRlcyI6e30sInJlcXVlc3RBdHRyaWJ1dGVzIjp7ImF1dGgiOnt9LCJ0aW1lIjoiMjAyNC0wMS0yNlQyMjoxMDozMS4xNzM2NDI5MzRaIn19LCJyZXNvdXJjZUxvY2F0aW9uIjp7ImN1cnJlbnRMb2NhdGlvbnMiOlsiZ2xvYmFsIl19LCJzZXJ2aWNlTmFtZSI6InN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20iLCJzdGF0dXMiOnsiY29kZSI6N319LCJyZWNlaXZlVGltZXN0YW1wIjoiMjAyNC0wMS0yNlQyMjoxMDozMS44NTk4MjcyMzZaIiwicmVzb3VyY2UiOnsibGFiZWxzIjp7ImJ1Y2tldF9uYW1lIjoiIiwibG9jYXRpb24iOiJnbG9iYWwiLCJwcm9qZWN0X2lkIjoiaG9uZXl0b2tlbnMtNDAxODE1In0sInR5cGUiOiJnY3NfYnVja2V0In0sInNldmVyaXR5IjoiRVJST1IiLCJ0aW1lc3RhbXAiOiIyMDI0LTAxLTI2VDIyOjEwOjMwLjk1MTY4ODkzNloifQ==', 'messageId': '10331227395807718', 'message_id': '10331227395807718', 'publishTime': '2024-01-26T22:10:34.387Z', 'publish_time': '2024-01-26T22:10:34.387Z'}, 'subscription': 'projects/honeytokens-401815/subscriptions/eventarc-us-central1-honeytoken-function-333789-sub-508'}}"
+  timestamp: "2024-01-26T22:10:35.587853Z"
+  }
