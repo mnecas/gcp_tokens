@@ -43,6 +43,9 @@ user_prefix="infra"
 webhook_url = "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX"
 ```
 
+## Permissions
+To configure the honeytokens you need to have following role [permissions](./permissions.txt)
+
 ## Deployment
 
 ```bash
