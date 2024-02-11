@@ -21,7 +21,7 @@ resource "google_cloudfunctions2_function" "honeytoken_function" {
   location = data.google_client_config.current.region
 
   build_config {
-    runtime     = "python38"
+    runtime     = "python310"
     entry_point = "honeytokens" # Set the entry point
     environment_variables = {
       BUILD_CONFIG_TEST = "build_test"
