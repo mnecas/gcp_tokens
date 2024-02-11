@@ -1,14 +1,14 @@
 
-resource "google_project_iam_audit_config" "honeytokens_iam_audit" {
-  project = data.google_client_config.current.project
-  service = "allServices"
-  audit_log_config {
-    log_type = "ADMIN_READ"
-  }
-  audit_log_config {
-    log_type = "DATA_READ"
-  }
-}
+# resource "google_project_iam_audit_config" "honeytokens_iam_audit" {
+#   project = data.google_client_config.current.project
+#   service = "allServices"
+#   audit_log_config {
+#     log_type = "ADMIN_READ"
+#   }
+#   audit_log_config {
+#     log_type = "DATA_READ"
+#   }
+# }
 
 resource "google_pubsub_topic" "honeytokens_pubsub" {
   name = "honeytokens-pubsub"
