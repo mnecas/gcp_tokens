@@ -1,12 +1,27 @@
 from slack_sdk.webhook import WebhookClient
 from abc import ABC, abstractmethod
 import json
+import os
+
+
+SLACK_REPORT = os.environ.get("SLACK_REPORT", "")
 
 
 class Metadata(ABC):
     @abstractmethod
-    def generate_slack_blocks(self) -> dict:
+    def generate_slack_text(self) -> dict:
         pass
+
+    def slack_text_to_block(self, text) -> dict:
+        return (
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": text,
+                },
+            },
+        )
 
 
 class AwsMetadata(Metadata):
@@ -26,33 +41,26 @@ class AwsMetadata(Metadata):
         resp = boto3.client("iam").list_user_tags(UserName=service_account)
         return resp.get("Tags")
 
-    def generate_slack_blocks(self) -> dict:
+    def generate_slack_text(self) -> dict:
         labels_string = ""
         for label in self.service_account_labels:
             key = label["Key"]
             val = label["Value"]
             labels_string += f"- {key}: {val}\n"
 
-        return [
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": f'AWS token "*{self.service_account}*" triggered',
-                },
-            },
-            {
-                "type": "section",
-                "text": {"type": "mrkdwn", "text": f"*Labels*:\n{labels_string}"},
-            },
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": f"*Metadata*:\n- IP: {self.caller_ip} \n- Method: {self.method}",
-                },
-            },
-        ]
+        if SLACK_REPORT:
+            return SLACK_REPORT.format(
+                service_account=self.service_account,
+                labels_string=labels_string,
+                caller_ip=self.caller_ip,
+                method=self.method,
+            )
+
+        return f"""
+            AWS token "*{self.service_account}*" triggered
+            \n*Labels*:\n{labels_string}
+            \n*Metadata*:\n- IP: {self.caller_ip} \n- Method: {self.method}
+        """
 
 
 class GcpMetadata(Metadata):
@@ -92,31 +100,24 @@ class GcpMetadata(Metadata):
         )
         return json.loads(get_account_response["description"])
 
-    def generate_slack_blocks(self) -> dict:
+    def generate_slack_text(self) -> dict:
         labels_string = ""
         for key, val in self.service_account_labels.items():
             labels_string += f"- {key}: {val}\n"
 
-        return [
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": f'GCP token "*{self.service_account}*" triggered',
-                },
-            },
-            {
-                "type": "section",
-                "text": {"type": "mrkdwn", "text": f"*Labels*:\n{labels_string}"},
-            },
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": f"*Metadata*:\n- IP: {self.caller_ip} \n- Method: {self.method}",
-                },
-            },
-        ]
+        if SLACK_REPORT:
+            return SLACK_REPORT.format(
+                service_account=self.service_account,
+                labels_string=labels_string,
+                caller_ip=self.caller_ip,
+                method=self.method,
+            )
+
+        return f"""
+            GCP token "*{self.service_account}*" triggered
+            \n*Labels*:\n{labels_string}
+            \n*Metadata*:\n- IP: {self.caller_ip} \n- Method: {self.method}
+        """
 
 
 class SlackRequest:
@@ -126,10 +127,12 @@ class SlackRequest:
 
     def send(self, metadata: Metadata):
         print(f"Sedning to: {self.webhook_url}")
-        blocks = metadata.generate_slack_blocks()
-        print(f"Sending blocks: {blocks}")
+        text = metadata.generate_slack_text()
+        print(f"Sending blocks: {text}")
         response = self.client.send(
-            text=f'Token "*{metadata.service_account}*" triggered', blocks=blocks
+            text=f'Token "*{metadata.service_account}*" triggered',
+            blocks=metadata.slack_text_to_block(text),
         )
-        print(f"Status: {response.status}")
+        print(f"Status: {response.status_code}")
+        print(f"Body: {response.body}")
         return response

@@ -16,6 +16,27 @@ resource "google_storage_bucket_object" "default" {
   source = data.archive_file.source.output_path # Add path to the zipped function source code
 }
 
+resource "google_project_iam_custom_role" "honeytoken_function_role" {
+  role_id     = "honeytokenFunctionRole"
+  title       = "Honeytoken Function Role"
+  permissions = [
+    "run.routes.invoke",
+    "run.jobs.run",
+    "iam.serviceAccounts.get"
+  ]
+}
+
+resource "google_service_account" "function_account" {
+  account_id   = "honeytoken-function-account"
+  display_name = "Honeytoken service account"
+}
+
+resource "google_project_iam_member" "function_role_account_bind" {
+  project = data.google_client_config.current.project
+  role    = google_project_iam_custom_role.honeytoken_function_role.name
+  member  = "serviceAccount:${google_service_account.function_account.email}"
+}
+
 resource "google_cloudfunctions2_function" "honeytoken_function" {
   name     = "honeytoken-function"
   location = data.google_client_config.current.region
@@ -38,9 +59,14 @@ resource "google_cloudfunctions2_function" "honeytoken_function" {
     environment_variables = {
       WEBHOOK_URL = var.webhook_url
     }
+    ingress_settings = "ALLOW_INTERNAL_ONLY"
+    service_account_email = google_service_account.function_account.email
   }
   event_trigger {
     event_type   = "google.cloud.pubsub.topic.v1.messagePublished"
     pubsub_topic = google_pubsub_topic.honeytokens_pubsub.id
+    service_account_email = google_service_account.function_account.email
+    retry_policy          = "RETRY_POLICY_DO_NOT_RETRY"
+    trigger_region        = data.google_client_config.current.region
   }
 }
