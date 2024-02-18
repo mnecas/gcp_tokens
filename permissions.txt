@@ -10,6 +10,13 @@ iam.serviceAccounts.actAs
 iam.serviceAccounts.create
 iam.serviceAccounts.delete
 iam.serviceAccounts.get
+iam.serviceAccounts.update
+iam.roles.undelete
+iam.roles.create
+iam.roles.update
+iam.roles.get
+iam.roles.list
+iam.roles.delete
 logging.sinks.create
 logging.sinks.delete
 logging.sinks.get

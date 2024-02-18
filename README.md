@@ -41,6 +41,15 @@ user_prefix="infra"
 
 # Slack config
 webhook_url = "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX"
+
+# Configuration of the report string
+slack_report = "This is custom message triggered by \"*{service_account}*\"."
+
+# Possible variables with which you can structure the slack report msg:
+# - service_account
+# - labels_string
+# - caller_ip
+# - method
 ```
 
 ## Permissions

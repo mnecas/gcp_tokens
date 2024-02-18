@@ -58,6 +58,7 @@ resource "google_cloudfunctions2_function" "honeytoken_function" {
   service_config {
     environment_variables = {
       WEBHOOK_URL = var.webhook_url
+      SLACK_REPORT = var.slack_report
     }
     ingress_settings = "ALLOW_INTERNAL_ONLY"
     service_account_email = google_service_account.function_account.email

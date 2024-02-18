@@ -4,9 +4,6 @@ import json
 import os
 
 
-SLACK_REPORT = os.environ.get("SLACK_REPORT", "")
-
-
 class Metadata(ABC):
     @abstractmethod
     def generate_slack_text(self) -> dict:
@@ -47,7 +44,7 @@ class AwsMetadata(Metadata):
             key = label["Key"]
             val = label["Value"]
             labels_string += f"- {key}: {val}\n"
-
+        SLACK_REPORT = os.environ.get("SLACK_REPORT", "")
         if SLACK_REPORT:
             return SLACK_REPORT.format(
                 service_account=self.service_account,
@@ -104,6 +101,7 @@ class GcpMetadata(Metadata):
         labels_string = ""
         for key, val in self.service_account_labels.items():
             labels_string += f"- {key}: {val}\n"
+        SLACK_REPORT = os.environ.get("SLACK_REPORT", "")
 
         if SLACK_REPORT:
             return SLACK_REPORT.format(

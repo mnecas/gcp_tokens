@@ -16,3 +16,7 @@ variable "webhook_url" {
 }
 
 
+variable "slack_report" {
+  type    = string
+  default = ""
+}
